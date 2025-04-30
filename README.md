@@ -1,1 +1,1 @@
-# local_ag_kurulum
+# Local Ağ Kurulum
