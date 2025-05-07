@@ -20,6 +20,10 @@ Hyper-V üzerinden sağdan **Sanal Anahtar Yöneticisi** bölümüne giriyoruz.
 
 - Ad: (Herhangi bir ad olabilir)
 
+Sanal ağ anahtarlarını bağlamak için:
+
+- PfSense yüklü makineye: **Sağ tık > Ayarlar > Ağ Bağdaştırıcısı > (WAN AĞI)**
+
 ## PfSense Kurulumu
 
 PfSense, Linux çekirdeğini kullanan açık kaynaklı bir güvenlik duvarı işi görür. Port yönlendirme, vs. İşler içindir.
@@ -53,6 +57,10 @@ Space'e basarak disk'i seçiyoruz.
 Kurulumdan sonra yeniden başlatıyoruz.
 Kurulumdan sonra otomatik giriş yapacaktır.
 
+Windows Server kurulu sunucuya:
+- **Sağ tık > Ayarlar > Ağ Bağdaştırıcısı > (WAN AĞI)**
+
+Windows Server'ı başlatıp http://192.168.1.1/ adresinden web arayüzüne girinebilir.
 Web arayüzü varsayılan kullanıcı bilgileri:
 
 - Kullanıcı: admin
