@@ -50,7 +50,7 @@ Space'e basarak disk'i seçiyoruz.
 Kurulumdan sonra yeniden başlatıyoruz.
 Kurulumdan sonra varsaylan giriş bilgileri:
 
-Kullanıcı: admin
+Kullanıcı: admin <br>
 Şifre: pfsense
 
 Aynı şey web arayüzü üzerinden'de geçerli.
