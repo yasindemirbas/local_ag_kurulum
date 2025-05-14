@@ -72,10 +72,50 @@ Interfaces > LAN > IPv4 Address : {Belirlenecek IP adresi. Örnek: 192.168.10.1}
 
 [resim8]
 
+# AD-DNS-DHCP
+
 Sunucunun IPv4 adresini değiştirmemiz gerek. Bunun için:
 
 Sistem tepsisindeki ağ simgesine sağ tık > "Open Network & Internet settings" > "Change adapter options" > Enternet sağ tık > "Properties" > (TCP/IPv4) : Diyerek IP'yi ayarlıyoruz.
 
 [resim9]
 
-Bağlantının gelmesi biraz sürebilir.
+Bağlantının gelmesi biraz sürebilir. "ipconfig" yaparak test ediniz.
+
+Sunucu rollerini yükleme:
+
+Server Manager > Add roles and features > Sunucuyu seçin(otomatik seçili gelir genellikle) > Aşağıdaki rolleri seçin:
+
+- ✅ Active Directory Domain Services
+- ✅ DNS Server
+- ✅ DHCP Server
+
+Sonrada Install diyerek yükleyiniz. Bazı eklentiler isteyebilir onlarıda yüklemeniz gerek. Yükleme bitince sunucuyu yeniden başlatın.
+
+Domain Yapılandırma:
+
+Yeniden başlatmadan sonra **Server Manager'dan uyarı gelecek**: "Promote this server to a domain controller" ona tıklayalım.
+
+Add a new forest, **root domain**: "staj.local" > DSRM (Directory Services Restore Mode) için parola belirleyin. > 4 adımı "**Next** diyerek geçin > **Install**
+
+Kendini otomatik yeniden başlatacaktır. Başlatıktan sonra eklediğiniz domain ile giriş yapacaktır. Administrator ve giriş şifresi girerek giriş yapılabilir.
+
+DHCP Ayarlama:
+
+Server Manager > Tools > DHCP
+
+DHCP > (Sunucu) > IPv4 sağ tıkla > New Scope
+
+Örnek Scope:
+- İsim: İstediğiniz isim
+- Açıklama: İstediğiniz açıklama
+- Başlangıç IP: 192.168.10.51
+- Bitiş IP: 192.168.10.200
+- Alt Ağ Maskesi: 255.255.255.0
+- Ağ Geçidi: 192.168.10.1 (pfsense)
+- DNS Sunucusu: 192.168.10.2
+- Domain: staj.local
+
+
+
+
