@@ -65,3 +65,17 @@ Web arayüzü varsayılan kullanıcı bilgileri:
 
 - Kullanıcı: admin
 - Şifre: pfsense
+
+Yönetim panelin Local IP değiştirme:
+
+Interfaces > LAN > IPv4 Address : {Belirlenecek IP adresi. Örnek: 192.168.10.1}
+
+[resim8]
+
+Sunucunun IPv4 adresini değiştirmemiz gerek. Bunun için:
+
+Sistem tepsisindeki ağ simgesine sağ tık > "Open Network & Internet settings" > "Change adapter options" > Enternet sağ tık > "Properties" > (TCP/IPv4) : Diyerek IP'yi ayarlıyoruz.
+
+[resim9]
+
+Bağlantının gelmesi biraz sürebilir.
