@@ -70,7 +70,8 @@ Yönetim panelin Local IP değiştirme:
 
 Interfaces > LAN > IPv4 Address : {Belirlenecek IP adresi. Örnek: 192.168.10.1}
 
-[resim8]
+![resim7](https://github.com/user-attachments/assets/c3cb22ea-2448-478b-8f0d-7b03b5b50099)
+
 
 # AD-DNS-DHCP
 
@@ -78,7 +79,8 @@ Sunucunun IPv4 adresini değiştirmemiz gerek. Bunun için:
 
 Sistem tepsisindeki ağ simgesine sağ tık > "Open Network & Internet settings" > "Change adapter options" > Enternet sağ tık > "Properties" > (TCP/IPv4) : Diyerek IP'yi ayarlıyoruz.
 
-[resim9]
+![resim8](https://github.com/user-attachments/assets/58fdfa5a-31a1-470a-9f06-ab7bcbaf50e9)
+
 
 Bağlantının gelmesi biraz sürebilir. "ipconfig" yaparak test ediniz.
 
@@ -121,7 +123,8 @@ Clientları ayarlama:
 
 Client sunucuyu açtıktan sonra IP atamasında DNS Sunucusunu, önceki sunucunun IP'si olarak ayarlıyoruz.
 
-[resim9]
+![resim9](https://github.com/user-attachments/assets/d1d4b841-ec6e-47b9-b292-788600f6ed0d)
+
 
 Ayarlar > Sistem > Hakkında > Yeniden adlandır > client1/client2
 
