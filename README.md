@@ -117,5 +117,23 @@ DHCP > (Sunucu) > IPv4 sağ tıkla > New Scope
 - Domain: staj.local
 
 
+Clientları ayarlama:
+
+Client sunucuyu açtıktan sonra IP atamasında DNS Sunucusunu, önceki sunucunun IP'si olarak ayarlıyoruz.
+
+[resim9]
+
+Ayarlar > Sistem > Hakkında > Yeniden adlandır > client1/client2
+
+Sonra yeniden başlatın.
+
+Domain'e katılma:
+
+Denetim Masası > Sistem > Bilgisayar adı > Değiştir > alan adınız.
+
+Sonra yeniden başlatın. Yeniden başlatıktan sonra ping atarak bağlantı kontrolü yapalım:
+
+"ping {sunucunun adı}" Eğer sunucu adını bilmiyorsanız "hostname" komutu ile öğrenebilirsiniz.
+
 
 
