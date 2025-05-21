@@ -138,5 +138,6 @@ Sonra yeniden başlatın. Yeniden başlatıktan sonra ping atarak bağlantı kon
 
 "ping {sunucunun adı}" Eğer sunucu adını bilmiyorsanız "hostname" komutu ile öğrenebilirsiniz.
 
+# IIS, SQL Server kurma ve dışarıdan bağlantı kurma
 
 
