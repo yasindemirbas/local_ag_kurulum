@@ -146,3 +146,22 @@ Server Manager > Manage > Add Roles and Features > Web Server (IIS)
 
 NOT: PfSense üzerinden HTTP portu açmayı unutmayın.
 
+SQL Sunucusu Kurma:
+
+SQL Server 2019 Express: https://www.microsoft.com/en-in/download/details.aspx?id=101064
+
+Kurulum yaptıktan sonra SQL Server Management Studio'ı açınız.
+"Windows Authentication" ile sunucu içinden giriş yapın.
+
+Varsayılan olarak "Object Explorer" açılacak ancak açılmaz ise, F8 ya da View > Object Explorer ile açabilirsiniz.
+
+Security > Logins > Sağ Tık > New Login
+
+Login Name: İstenilen İsim
+"SQL authentication" seçili olacak.
+Password: İstenilen şifre (Güçlü şifre yapın, yoksa hata verip kabul etmez.)
+
+NOT: "1433" Port'a izin verilmesi gerektiğini unutmayın.
+
+
+
