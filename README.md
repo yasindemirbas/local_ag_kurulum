@@ -138,6 +138,11 @@ Sonra yeniden başlatın. Yeniden başlatıktan sonra ping atarak bağlantı kon
 
 "ping {sunucunun adı}" Eğer sunucu adını bilmiyorsanız "hostname" komutu ile öğrenebilirsiniz.
 
-# IIS, SQL Server kurma ve dışarıdan bağlantı kurma
+# IIS (Web Server), SQL Server kurma ve dışarıdan bağlantı kurma
 
+2. Sunucuya giriş yapıp "Active Directory" aktif edip.
+
+Server Manager > Manage > Add Roles and Features > Web Server (IIS)
+
+NOT: PfSense üzerinden HTTP portu açmayı unutmayın.
 
